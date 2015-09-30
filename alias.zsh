@@ -8,6 +8,7 @@ alias start='./script/*_server.pl -r -p 3004'
 alias create='./script/*_create.pl'
 alias mp='measureperl'
 alias repl='perl -le "use Carp::Reply qw();Carp::Reply::repl();"'
+mikke(){ find ./ | xargs grep --color $1 }
 swap() {
   if [ $# -ne 2 ]; then
     echo "select two file!";
